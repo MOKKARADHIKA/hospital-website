@@ -1,0 +1,67 @@
+/* Smooth scroll for the page */
+html{
+  scroll-behavior: smooth;
+}
+
+.doctor-profile {
+  padding: 40px;
+}
+
+/* Banner */
+.doctor-banner {
+  height: 350px;
+  background: linear-gradient(rgba(1, 1, 37, 0.7), rgba(3, 3, 109, 0.7));
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 60px;
+}
+
+/* Header */
+.doctor-header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  color: white;
+}
+
+/* Doctor Image Animation */
+.doctor-banner-img {
+  width: 220px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  animation: popupFromBottom 1s ease-out forwards;
+}
+
+/* Image popping from bottom */
+@keyframes popupFromBottom {
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Smooth section appearance */
+/* .doctor-profile h2,
+.doctor-profile ul,
+.doctor-profile p{
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+  0%{
+    opacity:0;
+    transform: translateY(30px);
+  }
+
+  100%{
+    opacity:1;
+    transform: translateY(0);
+  }
+} */

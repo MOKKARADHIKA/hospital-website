@@ -1,0 +1,154 @@
+/* ========================= */
+/* Page Layout */
+/* ========================= */
+.awards-page {
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* ========================= */
+/* Breadcrumb BELOW Banner */
+/* ========================= */
+.breadcrumb-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 15px auto 0 auto;
+  font-size: 14px;
+}
+
+.breadcrumb-container .home-link {
+  color: #0077b6;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.breadcrumb-container span {
+  margin-right: 5px;
+}
+
+/* ========================= */
+/* Container & Filter */
+/* ========================= */
+.awards-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-section label {
+  font-weight: 600;
+}
+
+.filter-section select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* Awards Grid & Cards */
+/* ========================= */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.award-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.award-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.award-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.award-card:hover .award-image img {
+  transform: scale(1.08);
+}
+
+.award-date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #2b5c9a;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.award-info {
+  padding: 15px;
+}
+
+.award-info h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0077b6;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.read-more:hover {
+  color: #0055aa;
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* Load More Button */
+/* ========================= */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.load-more-container button {
+  background-color: #003366;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.load-more-container button:hover {
+  background-color: #1d73ce;
+}

@@ -1,0 +1,169 @@
+.history-page {
+  font-family: Arial, sans-serif;
+}
+
+.history-banner {
+  background: url("/images/about-banner.jpg") center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.history-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.history-banner h1, .history-banner p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+
+/* ========================= */
+/* Timeline Container        */
+/* ========================= */
+
+.history-timeline {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ========================= */
+/* Timeline Item             */
+/* ========================= */
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+/* Vertical Line */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 80px;        /* SAME for line + year */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #0077b6;
+}
+
+/* ========================= */
+/* Year on line              */
+/* ========================= */
+
+.timeline-year {
+  position: absolute;
+  left: 80px;        /* SAME as line */
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 6px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0077b6;
+  z-index: 2;
+  border-radius: 20px;
+  border: 2px solid #0077b6;
+}
+
+/* ========================= */
+/* Content Box               */
+/* ========================= */
+
+.timeline-content {
+  margin-left: 140px;   /* push right */
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Title */
+.timeline-content h3 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+/* Text */
+.timeline-content p {
+  margin: 0;
+  color: #333;
+}
+
+/* ========================= */
+/* Hover Effects             */
+/* ========================= */
+
+.timeline-item:hover .timeline-content {
+  transform: translateY(-5px);
+  color: white;
+}
+
+/* Arrow background animation */
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  height: 100%;
+  background: #357cc7;
+
+  /* PERFECT SHARP ARROW SHAPE */
+  clip-path: polygon(
+    0 0,        /* top-left */
+    85% 0,      /* near top-right */
+    100% 50%,   /* arrow tip */
+    /* 85% 100%,   bottom-right
+    0 100%      bottom-left */
+  );
+
+  transition: width 0.5s ease;
+  z-index: -1;
+}
+
+.timeline-item:hover .timeline-content::before {
+  width: 100%;
+}
+
+/* Text color change on hover */
+.timeline-item:hover .timeline-content h3,
+.timeline-item:hover .timeline-content p {
+  color: #fff;
+}
+
+/* Year hover */
+.timeline-item:hover .timeline-year {
+  background: #0077b6;
+  color: #fff;
+}
+
+/* ========================= */
+/* Fade Animation            */
+/* ========================= */
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}

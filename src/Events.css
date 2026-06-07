@@ -1,0 +1,234 @@
+/* ========================= */
+/* Page Layout */
+/* ========================= */
+
+.events-page {
+  font-family: Arial, sans-serif;
+}
+
+/* ========================= */
+/* Events Banner (Like Career) */
+/* ========================= */
+
+.events-banner {
+  height: 350px;
+  position: relative;
+
+  /* 🔥 Background Image */
+  background: url("/images/events-banner.jpg") center/cover no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-left: 80px;
+  color: white;
+}
+
+/* Dark overlay */
+.events-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Keep text above overlay */
+.events-banner * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Title */
+.events-banner h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.events-banner p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+/* ========================= */
+/* Breadcrumb BELOW Banner   */
+/* ========================= */
+
+.breadcrumb-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 15px auto 0 auto;
+  font-size: 14px;
+}
+
+.breadcrumb-container .home-link {
+  color: #0077b6;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.breadcrumb-container span {
+  margin-right: 5px;
+}
+
+.home-link {
+  color: #00aaff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ========================= */
+/* Container */
+/* ========================= */
+
+.events-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* ========================= */
+/* Filter */
+/* ========================= */
+
+.filter-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-section label {
+  font-weight: 600;
+}
+
+.filter-section select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* Content */
+/* ========================= */
+
+.events-content {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+
+/* ========================= */
+/* EVENTS GRID */
+/* ========================= */
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.event-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Lift */
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.event-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* 🔥 ZOOM EFFECT */
+.event-card:hover .event-image img {
+  transform: scale(1.1);
+}
+
+/* Date */
+.event-date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #0077b6;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+/* Info */
+.event-info {
+  padding: 15px;
+}
+
+.event-info h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #0077b6;
+  font-weight: 600;
+}
+
+
+
+
+/* ========================= */
+/* LOAD MORE BUTTON */
+/* ========================= */
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.load-more-container button {
+  background-color: #003366;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.load-more-container button:hover {
+  background-color: #0055aa;
+}
+
+
+.event-image img {
+  transition: transform 0.4s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.08);
+}

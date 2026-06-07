@@ -1,0 +1,184 @@
+/* ========================= */
+/* Banner Section */
+/* ========================= */
+
+.blog-details-banner {
+  height: 250px;
+  background: url("/images/blog-banner.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-details-banner h1 {
+  color: rgb(25, 10, 112);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* ========================= */
+/* Breadcrumb */
+/* ========================= */
+
+.breadcrumb {
+  padding: 15px 40px;
+  font-size: 15px;
+  background: #f5f5f5;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb span {
+  color: #333;
+  font-weight: 500;
+}
+
+/* ========================= */
+/* MAIN LAYOUT */
+/* ========================= */
+
+.blog-details-container {
+
+  display: flex;        /* ⭐ THIS MAKES RIGHT SIDE */
+  gap: 30px;
+
+  padding: 40px;
+
+  align-items: flex-start;
+
+}
+
+/* ========================= */
+/* LEFT SIDE */
+/* ========================= */
+
+.blog-left {
+
+  flex: 3;
+
+}
+
+.blog-left img {
+
+  width: 100%;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+
+}
+
+.blog-date {
+
+  color: #777;
+
+  font-size: 14px;
+
+  margin-bottom: 10px;
+
+}
+
+.blog-left h2 {
+
+  font-size: 26px;
+
+  margin-bottom: 15px;
+
+  color: #222;
+
+}
+
+.blog-left p {
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: #444;
+
+}
+
+/* ========================= */
+/* RIGHT SIDE */
+/* ========================= */
+
+.blog-right {
+
+  flex: 1;     /* ⭐ Controls right width */
+
+}
+
+/* ========================= */
+/* Recent Blogs Box */
+/* ========================= */
+
+.recent-blogs {
+
+  background: #f8f9fa;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+}
+
+.recent-blogs h3 {
+
+  font-size: 20px;
+
+  margin-bottom: 15px;
+
+  border-bottom: 2px solid #007bff;
+
+  padding-bottom: 8px;
+
+}
+
+/* ========================= */
+/* Recent Blog Items */
+/* ========================= */
+
+.recent-blog-item {
+
+  display: block;
+
+  text-decoration: none;
+
+  color: #333;
+
+  font-size: 15px;
+
+  padding: 10px 0;
+
+  border-bottom: 1px solid #ddd;
+
+  transition: 0.3s;
+
+}
+
+.recent-blog-item:hover {
+
+  color: #007bff;
+
+  padding-left: 5px;
+
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .blog-details-container {
+
+    flex-direction: column;
+
+  }
+
+}

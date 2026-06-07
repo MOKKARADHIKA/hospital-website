@@ -1,0 +1,374 @@
+.home {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url("/hospital1.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   background: rgba(0, 0, 50, 0.6);
+  left: 0;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  /* color: rgb(233, 230, 228); */
+  color:white;
+}
+
+.overlay h1 {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.overlay p {
+  margin-top: 15px;
+  font-size: 32px;
+}
+
+
+/* Arrow buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 2rem;  /* bigger arrow */
+  cursor: pointer;
+  z-index: 3;
+  user-select: none;   /* prevent text selection */
+  padding: 0 10px;
+}
+
+.left-arrow { left: 20px; }
+.right-arrow { right: 20px; }
+
+.arrow:hover {
+  color: #ffcc00;  /* optional hover color */
+}
+
+
+
+/* MINI IMAGES */
+.mini-images {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  gap: 25px;
+  z-index: 2;
+}
+
+.mini-images img {
+  width: 180px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+
+/* SPECIALITIES SECTION */
+.specialities {
+  padding: 80px 5%;
+  background: #545f9c;
+  text-align: center;
+}
+
+.specialities h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #1a1a1a;
+  position: relative;
+}
+
+.specialities h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #0077b6;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 5px;
+}
+
+/* Grid Layout */
+.speciality-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Card Design */
+.speciality-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+}
+
+.speciality-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  background: #ccbac9;
+}
+
+.speciality-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #0077b6;
+}
+
+.speciality-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* CENTRES SECTION */
+/* .centres {
+  padding: 80px 5%;
+  text-align: center;
+  background: #bfc5cf;
+}
+
+.centre-subtitle {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  color: #555;
+  font-size: 16px;
+}
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.centre-container {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.centre-container::-webkit-scrollbar {
+  display: none;
+}
+
+.centre-card {
+  min-width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.centre-card:hover {
+  transform: translateY(-8px);
+}
+
+.centre-icon {
+  font-size: 40px;
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.slider-btn {
+  background: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+}
+
+.slider-btn.left {
+  left: -20px;
+}
+
+.slider-btn.right {
+  right: -20px;
+}
+
+.slider-btn:hover {
+  background: #0077b6;
+  color: white;
+} */
+
+/* ============================= */
+/* Centres Section */
+/* ============================= */
+
+.centres {
+  padding: 60px 40px;
+  background: #f5f7fa; /* light grey background */
+  text-align: center;
+}
+
+.centres h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.centre-subtitle {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 16px;
+  color: #666;
+}
+
+/* ============================= */
+/* Carousel Wrapper */
+/* ============================= */
+
+.centre-carousel {
+  position: relative;
+}
+
+/* ============================= */
+/* Cards Container */
+/* ============================= */
+
+.centre-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 25px;
+  padding: 20px 50px;
+}
+
+/* Hide scrollbar */
+.centre-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================= */
+/* Individual Cards */
+/* ============================= */
+
+.centre-card {
+  min-width: 260px;
+  max-width: 260px;
+  background: white; /* WHITE CARD */
+  border-radius: 15px;
+  padding: 25px 20px;
+  text-align: center;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+
+.centre-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* ============================= */
+/* Icons */
+/* ============================= */
+
+.centre-icon {
+  font-size: 40px;
+  color: #007bff; /* medical blue */
+  margin-bottom: 15px;
+}
+
+.centre-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.centre-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* ============================= */
+/* Arrow Buttons */
+/* ============================= */
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 26px;
+  color: #007bff;
+
+  background: white;
+  border-radius: 50%;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+  z-index: 10;
+
+  transition: all 0.3s ease;
+}
+
+/* Left Arrow */
+
+.left-arrow {
+  left: 10px;
+}
+
+/* Right Arrow */
+
+.right-arrow {
+  right: 10px;
+}
+
+/* Hover effect */
+
+.arrow:hover {
+  background: #007bff;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.centres {
+  padding: 60px 40px;
+  background: linear-gradient(to right, #f8fbff, #eef4ff);
+}

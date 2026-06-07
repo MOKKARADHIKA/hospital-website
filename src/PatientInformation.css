@@ -1,0 +1,85 @@
+/* Top Banner */
+
+.patient-info-banner {
+  background: url("/images/patient-banner.jpg") center/cover no-repeat;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.patient-info-banner h1 {
+  color: rgb(25, 53, 129);
+  font-size: 36px;
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+  padding: 15px 40px;
+  font-size: 14px;
+}
+
+/* Second Banner */
+
+.looking-banner {
+  background: #4b8cd3;
+  padding: 30px;
+  text-align: center;
+  
+}
+
+.looking-banner h2 {
+  margin-bottom: 15px;
+}
+
+/* Dropdown */
+
+.info-dropdown {
+  padding: 10px;
+  font-size: 16px;
+ 
+ 
+}
+
+/* Content Section */
+
+.info-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  padding: 40px;
+}
+
+/* Left Text */
+
+.info-text {
+  flex: 1;
+}
+
+.info-text h3 {
+  margin-bottom: 15px;
+}
+
+/* Right Image */
+
+.info-image {
+  flex: 1;
+}
+
+.info-image img {
+  width: 70%;
+  border-radius: 8px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .info-content {
+    flex-direction: column;
+  }
+
+}

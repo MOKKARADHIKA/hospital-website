@@ -1,0 +1,49 @@
+/* Banner */
+
+.bwm-banner {
+  background: url("/images/bwm-banner.jpg") center/cover no-repeat;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bwm-banner h1 {
+  color: white;
+  font-size: 34px;
+  text-align: center;
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+  padding: 15px 40px;
+  font-size: 14px;
+}
+
+/* Content */
+
+.bwm-content {
+  padding: 40px 60px;
+  line-height: 1.8;
+}
+
+.bwm-content h2 {
+  margin-bottom: 20px;
+}
+
+.bwm-content p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .bwm-content {
+    padding: 30px 20px;
+  }
+
+}

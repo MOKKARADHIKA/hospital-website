@@ -1,0 +1,302 @@
+/* ========================= */
+/* Banner Section */
+/* ========================= */
+
+.speciality-banner {
+
+  background: 
+    linear-gradient(
+       rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("/images/speciality-banner.jpg")
+    center/cover no-repeat;
+
+  height: 280px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+}
+
+.speciality-banner h1 {
+
+  color: white;
+
+  font-size: 38px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+}
+
+
+/* ========================= */
+/* Breadcrumb */
+/* ========================= */
+
+.breadcrumb {
+
+  background: #f5f7fa;
+
+  padding: 14px 40px;
+
+  font-size: 14px;
+
+  color: #555;
+
+}
+
+.breadcrumb a {
+
+  color: #007bff;
+
+  text-decoration: none;
+
+  font-weight: 500;
+
+}
+
+.breadcrumb a:hover {
+
+  text-decoration: underline;
+
+}
+
+
+/* ========================= */
+/* Cards Layout */
+/* ========================= */
+
+.speciality-cards {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  padding: 50px 60px;
+
+  background: #f9fbfd;
+
+}
+
+
+/* ========================= */
+/* Card Design */
+/* ========================= */
+
+.speciality-card {
+
+  background: white;
+
+  padding: 28px;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.06);
+
+  transition: all 0.35s ease;
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+
+/* Card Hover */
+
+.speciality-card:hover {
+
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 16px 30px rgba(0,0,0,0.15);
+
+}
+
+
+/* Top Accent Line */
+
+.speciality-card::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 0%;
+
+  height: 4px;
+
+  background: #007bff;
+
+  transition: 0.3s;
+
+}
+
+.speciality-card:hover::before {
+
+  width: 100%;
+
+}
+
+
+/* Card Title */
+
+.speciality-card h3 {
+
+  color: #002b5b;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  margin-bottom: 12px;
+
+}
+
+
+/* Card Text */
+
+.speciality-card p {
+
+  color: #555;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+}
+
+
+/* ========================= */
+/* Read More Button */
+/* ========================= */
+
+.read-more {
+
+  display: inline-block;
+
+  margin-top: 16px;
+
+  padding: 10px 18px;
+
+  background: linear-gradient(
+    45deg,
+    #007bff,
+    #0056b3
+  );
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+
+}
+
+
+/* Button Hover */
+
+.read-more:hover {
+
+  background: linear-gradient(
+    45deg,
+    #0056b3,
+    #003d80
+  );
+
+  transform: translateX(4px);
+
+}
+
+
+/* ========================= */
+/* Centres Section */
+/* ========================= */
+
+.centres-section {
+
+  padding: 60px;
+
+  background: rgb(255, 255, 255);
+
+  text-align: center;
+
+}
+
+.centres-section h2 {
+
+  color: #002b5b;
+
+  font-size: 28px;
+
+  margin-bottom: 15px;
+
+}
+
+.centres-section p {
+
+  max-width: 700px;
+
+  margin: auto;
+
+  font-size: 16px;
+
+  color: #555;
+
+  line-height: 1.7;
+
+}
+
+
+/* ========================= */
+/* Responsive Design */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .speciality-cards {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .speciality-cards {
+
+    grid-template-columns: 1fr;
+
+    padding: 30px;
+
+  }
+
+  .speciality-banner h1 {
+
+    font-size: 28px;
+
+  }
+
+}

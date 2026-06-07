@@ -1,0 +1,144 @@
+/* ========================= */
+/* Banner */
+/* ========================= */
+
+.nursing-banner {
+
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url("/images/nursing-banner.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  height: 280px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.nursing-banner h1 {
+
+  color: white;
+
+  font-size: 38px;
+
+  font-weight: 700;
+
+}
+
+
+/* Breadcrumb */
+
+.breadcrumb {
+
+  padding: 15px 50px;
+
+  background: white;
+
+  font-size: 14px;
+
+}
+
+
+/* ========================= */
+/* Content Section */
+/* ========================= */
+
+.nursing-content {
+
+  display: flex;
+
+  gap: 50px;
+
+  padding: 60px;
+
+  align-items: flex-start;
+
+}
+
+
+/* Left Side */
+
+.nursing-left {
+
+  flex: 1;
+
+}
+
+.nursing-left h2 {
+
+  color: #002b5b;
+
+  margin-top: 20px;
+
+}
+
+.nursing-left p {
+
+  color: #555;
+
+  line-height: 1.7;
+
+  margin-top: 10px;
+
+}
+
+.nursing-left ul {
+
+  margin-top: 15px;
+
+  padding-left: 20px;
+
+}
+
+.nursing-left li {
+
+  margin-bottom: 10px;
+
+  color: #444;
+
+}
+
+
+/* Right Image */
+
+.nursing-right {
+
+  flex: 1;
+
+}
+
+.nursing-right img {
+
+  width: 100%;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .nursing-content {
+
+    flex-direction: column;
+
+  }
+
+}

@@ -1,0 +1,124 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dashboard-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.appointments-table th {
+  background-color: #0077cc;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.appointments-table tr:hover {
+  background-color: #f1faff;
+  transition: background-color 0.3s ease;
+}
+
+.completed-row {
+  background-color: #e6f7e6;
+}
+
+.appointments-table td input {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+}
+
+.status-badge.completed {
+  background-color: #28a745;
+}
+
+.status-badge.pending {
+  background-color: #ff6b6b;
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 3px;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-btn.complete {
+  color: #28a745;
+}
+
+.icon-btn.edit {
+  color: #ffc107;
+}
+
+.icon-btn.delete {
+  color: #dc3545;
+}
+
+.icon-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.icon-btn:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 992px) {
+  .appointments-table th,
+  .appointments-table td {
+    padding: 8px 10px;
+  }
+
+  .icon-btn {
+    font-size: 0.85rem;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .appointments-table {
+    display: block;
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,232 @@
+/* ========================= */
+/* Page Layout */
+/* ========================= */
+
+.faq-page {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fb; /* light gray background */
+}
+
+/* ========================= */
+/* Banner Section */
+/* ========================= */
+
+.faq-banner {
+
+  height: 280px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    ),
+    url("/images/faq-banner.jpg")
+    center/cover no-repeat;
+
+}
+
+/* ========================= */
+/* Breadcrumb */
+/* ========================= */
+
+.breadcrumb {
+
+  padding: 15px 50px;
+
+  font-size: 14px;
+
+  color: #666;
+
+  background: white;
+
+  border-bottom: 1px solid #eee;
+
+}
+
+.breadcrumb a {
+
+  text-decoration: none;
+
+  color: #007bff;
+
+  font-weight: 500;
+
+}
+
+.breadcrumb span {
+
+  color: #333;
+
+  font-weight: 500;
+
+}
+
+/* ========================= */
+/* FAQ Container */
+/* ========================= */
+
+.faq-container {
+
+  max-width: 1050px;
+
+  margin: 40px auto;
+
+  padding: 0 20px;
+
+}
+
+/* ========================= */
+/* FAQ Card */
+/* ========================= */
+
+.faq-item {
+
+  background: white;
+
+  margin-bottom: 18px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  overflow: hidden;
+
+  transition: 0.3s;
+
+}
+
+/* Hover Effect */
+
+.faq-item:hover {
+
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+
+  transform: translateY(-2px);
+
+}
+
+/* ========================= */
+/* Question Row */
+/* ========================= */
+
+.faq-question {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 18px 22px;
+
+  cursor: pointer;
+
+}
+
+.faq-question h3 {
+
+  font-size: 18px;
+
+  color: #003366;
+
+  font-weight: 600;
+
+  margin: 0;
+
+}
+
+/* ========================= */
+/* Arrow Icon */
+/* ========================= */
+
+.faq-icon {
+
+  font-size: 16px;
+
+  color: #007bff;
+
+  transition: 0.3s;
+
+}
+
+.rotate {
+
+  transform: rotate(180deg);
+
+}
+
+/* ========================= */
+/* Answer Section */
+/* ========================= */
+
+.faq-answer {
+
+  padding: 0 22px 18px 22px;
+
+  color: #555;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  border-top: 1px solid #eee;
+
+  animation: fadeIn 0.3s ease;
+
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+/* ========================= */
+/* Responsive Design */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .faq-banner {
+
+    height: 220px;
+
+    font-size: 28px;
+
+  }
+
+  .breadcrumb {
+
+    padding: 12px 20px;
+
+  }
+
+  .faq-question h3 {
+
+    font-size: 16px;
+
+  }
+
+}

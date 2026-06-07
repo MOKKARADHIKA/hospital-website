@@ -1,0 +1,215 @@
+.contact-page {
+  font-family: Arial, sans-serif;
+}
+
+/* Banner */
+.contact-banner {
+  background-color: #003366;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 50px;
+  position: relative;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.banner-image img {
+  width: 350px;
+  object-fit: contain;
+  margin-right: 40px;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.banner-breadcrumb {
+  margin-top: 10px;
+}
+
+.banner-breadcrumb .home-link {
+  cursor: pointer;
+  color: #00aaff;
+  font-weight: bold;
+}
+
+.banner-breadcrumb span {
+  margin: 0 5px;
+}
+
+/* Accordion */
+.contact-accordion-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.accordion-item {
+  flex: 1 1 30%;
+  background: #f7f7f7;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+  transform: translateY(-3px);
+}
+
+.accordion-title {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003366;
+  color: white;
+}
+
+.accordion-toggle {
+  font-size: 1.5rem;
+}
+
+.accordion-content {
+  padding: 20px;
+  background: #ffffff;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-content a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.accordion-content a:hover {
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* Location Sidebar Section  */
+/* ========================= */
+
+.location-sidebar-section {
+  max-width: 1200px;
+  /* margin: 50px auto; */
+  padding: 0 20px;
+  margin-left: 0;
+  
+}
+
+.location-sidebar-container {
+  display: flex;
+  gap: 30px;
+}
+
+/* ========================= */
+/* LEFT SIDE (Locations List)*/
+/* ========================= */
+
+.location-sidebar-left {
+  width: 30%;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Each location item */
+.sidebar-item {
+  /* padding: 18px 15px; */
+  /* padding-bottom: 50px; */
+  padding: 80px;
+  cursor: pointer;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.sidebar-item:hover {
+  background-color: #f0f6ff;
+  padding-left: 20px;
+}
+
+/* Active */
+.sidebar-item.active {
+  background-color: #003366;
+  color: white;
+  font-weight: 600;
+  border-left: 4px solid #00aaff;
+}
+
+/* ========================= */
+/* RIGHT SIDE (Details + Map)*/
+/* ========================= */
+
+.location-sidebar-right {
+  width: 70%;
+
+}
+
+/* Title */
+.location-address h3 {
+  font-size: 22px;
+  color: #003366;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.location-address p {
+  margin: 6px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.location-address a {
+  color: #003366;
+}
+
+/* Map */
+.location-map {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.location-map iframe {
+  width: 100%;
+  height: 380px;
+  border: none;
+}
+
+/* ========================= */
+/* Responsive                */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .location-sidebar-container {
+    flex-direction: column;
+  }
+
+  .location-sidebar-left,
+  .location-sidebar-right {
+    width: 100%;
+  }
+
+  .location-sidebar-left {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}

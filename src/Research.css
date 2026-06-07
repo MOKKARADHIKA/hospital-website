@@ -1,0 +1,313 @@
+/* Page */
+.research-page {
+  font-family: Arial, sans-serif;
+}
+
+/* 🔵 Banner */
+.research-banner {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("/images/research-banner.jpg") center/cover no-repeat;
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.research-banner h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* 🧬 About Section */
+.research-about {
+  display: flex;
+  gap: 40px;
+  padding: 60px 80px;
+  align-items: center;
+}
+
+.research-left img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.research-right {
+  flex: 1;
+}
+
+.research-right h2 {
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+.research-right p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* 🔬 Research Areas */
+.research-areas {
+  padding: 60px 80px;
+  text-align: center;
+  background: #f5f7fb;
+}
+
+.research-areas h2 {
+  margin-bottom: 40px;
+  color: #003366;
+}
+
+/* Grid */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Cards */
+.area-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.area-card .icon {
+  font-size: 40px;
+  color: #357cc7;
+  margin-bottom: 15px;
+}
+
+.area-card h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Hover */
+.area-card:hover {
+  transform: translateY(-8px);
+  background: #357cc7;
+  color: white;
+}
+
+.area-card:hover .icon {
+  color: white;
+}
+
+
+
+
+
+
+
+/* Breadcrumb */
+/* Breadcrumb BELOW banner */
+.breadcrumb-container {
+  padding: 10px 50px;
+  background: #f5f5f5;
+  font-size: 16px;
+}
+
+.home-link {
+  cursor: pointer;
+  font-weight: bold;
+  color: #003366;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+/* Slider Layout */
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.areas-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px;
+}
+
+.areas-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Cards */
+.area-card {
+  min-width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.area-card:hover {
+  transform: translateY(-5px);
+  background: #357cc7;
+  color: white;
+}
+
+/* Arrows */
+.arrow {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+
+
+
+/* ========================= */
+/* TEAM SECTION */
+/* ========================= */
+.team-section {
+  padding: 50px;
+}
+
+/* Title */
+.team-section h2 {
+  margin-bottom: 20px;
+}
+
+/* ========================= */
+/* DROPDOWN (AIG STYLE) */
+/* ========================= */
+.team-dropdown {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: 2px solid #2f5faa;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* GRID LAYOUT */
+/* ========================= */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* ========================= */
+/* CARD STYLE (PILL STYLE) */
+/* ========================= */
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f5f7fb;
+  padding: 10px 15px;
+  border-radius: 40px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.team-card:hover {
+  background: #e6ecf8;
+  transform: translateX(5px);
+}
+
+/* ========================= */
+/* IMAGE */
+/* ========================= */
+.team-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ========================= */
+/* NAME */
+/* ========================= */
+.team-card p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2f5faa;
+}
+
+
+
+/* ================= Publications Section ================= */
+.publications-section {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.publications-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.publications-list {
+  max-width: 1100px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+.publications-list li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+
+
+
+
+.research-link-section {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.research-link-section p {
+  font-size: 16px;
+  color: #333;
+}
+
+.research-link-section a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.research-link-section a:hover {
+  text-decoration: underline;
+}
