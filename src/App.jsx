@@ -23,6 +23,7 @@ import CentreDetails from "./CentreDetails";
 import SubSpecialityDetails from "./SubSpecialityDetails";
 import Register from "./Register";
 import RegisteredUsers from "./RegisteredUsers";
+// import Login from "./Login";
 import Login from "./Login";
 import Careers from "./Careers";
 import Research from "./Research"; 
