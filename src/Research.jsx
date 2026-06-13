@@ -133,7 +133,7 @@ function Research() {
 
       {/* ✅ Breadcrumb BELOW banner */}
       <div className="breadcrumb-container">
-        <span onClick={() => navigate("/")} className="home-link">
+        <span onClick={() => navigate("/home")} className="home-link">
           Home
         </span>
         <span> / Research</span>

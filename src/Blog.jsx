@@ -14,7 +14,7 @@ const Blog = () => {
 
       {/* Breadcrumb */}
       <div className="breadcrumb">
-        <Link to="/">Home</Link> /
+        <Link to="/home">Home</Link> /
         <span> Blog</span>
       </div>
 

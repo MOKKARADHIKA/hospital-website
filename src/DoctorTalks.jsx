@@ -52,7 +52,7 @@ const DoctorTalks = () => {
 
       {/* Breadcrumb */}
       <div className="breadcrumb">
-        <Link to="/">Home</Link> / <span>Doctor Talk</span>
+        <Link to="/home">Home</Link> / <span>Doctor Talk</span>
       </div>
 
       {/* Cards Section */}

@@ -106,7 +106,7 @@ We also encourage visitors to cooperate with hospital staff and follow safety pr
 
       {/* Breadcrumb */}
       <div className="breadcrumb">
-        <Link to="/">Home</Link> /
+        <Link to="/home">Home</Link> /
         <span> Patient Information</span>
       </div>
 

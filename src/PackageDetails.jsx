@@ -29,7 +29,7 @@ const PackageDetails = () => {
 
       <div className="breadcrumb">
 
-        <Link to="/">Home</Link> /
+        <Link to="/home">Home</Link> /
 
         <Link to="/health-packages">
           Health Packages

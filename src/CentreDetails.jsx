@@ -536,8 +536,8 @@ const CentreDetails = () => {
 
       {/* Breadcrumb */}
       <div className="breadcrumb">
-        <Link to="/">Home</Link> / 
-        <Link to="/specialities"> Specialities</Link> / 
+        <Link to="/home">Home</Link> / 
+        <Link to="/speciality"> Specialities</Link> / 
         <span>{name}</span>
       </div>
 

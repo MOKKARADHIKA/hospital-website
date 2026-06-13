@@ -140,7 +140,7 @@ function Events() {
       {/* ✅ Breadcrumb OUTSIDE banner */}
       {/* ==================== */}
       <div className="breadcrumb-container">
-        <span className="home-link" onClick={() => navigate("/")}>
+        <span className="home-link" onClick={() => navigate("/home")}>
           Home
         </span>
         <span> / Events / Conferences</span>

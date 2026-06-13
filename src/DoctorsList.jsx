@@ -577,7 +577,7 @@ function DoctorsDetails() {
 
       {/* Breadcrumb */}
       <div className="breadcrumb-container">
-        <span className="breadcrumb-home" onClick={() => navigate("/")}>
+        <span className="breadcrumb-home" onClick={() => navigate("/home")}>
           Home
         </span>{" "}
         / <span>Our Doctors</span>

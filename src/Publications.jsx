@@ -198,7 +198,7 @@ function Publications() {
 
       {/* Breadcrumb */}
       <div className="breadcrumb-container">
-        <span className="home-link" onClick={() => navigate("/")}>
+        <span className="home-link" onClick={() => navigate("/home")}>
           Home
         </span>
         <span> / Publications</span>

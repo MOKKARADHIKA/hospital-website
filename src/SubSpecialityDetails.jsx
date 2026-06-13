@@ -655,7 +655,7 @@ const SubSpecialityDetails = () => {
       <h1>{sub.title}</h1>
 
       <div className="banner-breadcrumb">
-        <Link to="/">Home</Link> /
+        <Link to="/home">Home</Link> /
         <span> Sub Speciality </span> /
         <span>{sub.title}</span>
       </div>

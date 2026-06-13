@@ -56,7 +56,7 @@ const PsuGovt = () => {
       {/* Breadcrumb */}
       <div className="breadcrumb">
 
-        <Link to="/">Home</Link> /
+        <Link to="/home">Home</Link> /
         <span> PSU & Govt</span>
 
       </div>

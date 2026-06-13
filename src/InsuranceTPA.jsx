@@ -35,7 +35,7 @@ const InsuranceTPA = () => {
 
       {/* Breadcrumb */}
       <div className="breadcrumb">
-        <Link to="/">Home</Link> /
+        <Link to="/home">Home</Link> /
         <span> Insurance & TPA</span>
       </div>
 

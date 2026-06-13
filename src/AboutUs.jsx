@@ -39,7 +39,7 @@ function AboutUs({ overviewRef, historyRef, boardRef, showHistory }) { // <-- ad
         <div className="banner-breadcrumb">
           <span
             className="home-link"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
           >
             Home
           </span>

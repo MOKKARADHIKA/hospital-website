@@ -192,7 +192,7 @@
   width: auto;
 
   object-fit: contain;
-
+  
   margin-top: -10px;   /* Pull logo upward */
   margin-bottom: -10px; /* Prevent navbar growing */
 
@@ -303,6 +303,7 @@
   .logo-img {
     height: 100px;
     margin: 0;
+  
   }
 
   /* Navigation */

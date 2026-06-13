@@ -41,7 +41,7 @@ const navigate = useNavigate();
 
 {/* ✅ Breadcrumb BELOW banner */}
 <div className="breadcrumb-container">
-  <Link to="/" className="home-link">Home</Link>
+  <Link to="/home" className="home-link">Home</Link>
   <span> / Careers</span>
 </div>
       

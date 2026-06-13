@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./AwardDetails.css";
 
+
 function AwardDetails({ awardsData }) {
 
   const { slug } = useParams();
@@ -34,7 +35,7 @@ function AwardDetails({ awardsData }) {
         <span
           className="home-link"
           onClick={() =>
-            navigate("/")
+            navigate("/home")
           }
         >
           Home

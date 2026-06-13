@@ -24,7 +24,7 @@ function EventDetails({ eventsData }) {
       {/* Breadcrumb */}
       {/* ==================== */}
       <div className="breadcrumb-container">
-        <span className="home-link" onClick={() => navigate("/")}>
+        <span className="home-link" onClick={() => navigate("/home")}>
           Home
         </span>
         <span> / Events / Conference / {event.title}</span>

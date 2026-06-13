@@ -52,7 +52,7 @@ const PatientTestimonials = () => {
 
       {/* Breadcrumb */}
       <div className="breadcrumb">
-        <Link to="/">Home</Link> / 
+        <Link to="/home">Home</Link> / 
         <span> Connect with AIG Hospitals</span>
       </div>
 

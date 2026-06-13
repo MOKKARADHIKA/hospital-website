@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
 
       <div className="breadcrumb">
 
-        <Link to="/">Home</Link> /
+        <Link to="/home">Home</Link> /
 
         <span> Terms & Conditions</span>
 

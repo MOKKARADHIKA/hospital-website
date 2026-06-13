@@ -112,7 +112,7 @@ function Contact() {
           <div className="banner-text">
             <h1>Contact Us</h1>
             <div className="banner-breadcrumb">
-              <span className="home-link" onClick={() => navigate("/")}>
+              <span className="home-link" onClick={() => navigate("/home")}>
                 Home
               </span>{" "}
               / Contact Us

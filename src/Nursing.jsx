@@ -20,7 +20,7 @@ const Nursing = () => {
 
       <div className="breadcrumb">
 
-        <Link to="/">Home</Link> /
+        <Link to="/home">Home</Link> /
 
         <span> Nursing At HEALTH CARE</span>
 

@@ -226,7 +226,7 @@ function Awards() {
 
       {/* Breadcrumb */}
       <div className="breadcrumb-container">
-        <span className="home-link" onClick={() => navigate("/")}>Home</span>
+        <span className="home-link" onClick={() => navigate("/home")}>Home</span>
         <span> / Awards</span>
       </div>
 

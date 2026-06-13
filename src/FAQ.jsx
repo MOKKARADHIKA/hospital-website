@@ -343,7 +343,7 @@ const FAQ = () => {
       {/* Breadcrumb */}
 
       <div className="breadcrumb">
-        <Link to="/">Home</Link> /
+        <Link to="/home">Home</Link> /
         <span> FAQ</span>
       </div>
 
