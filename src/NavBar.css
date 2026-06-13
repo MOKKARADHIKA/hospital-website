@@ -241,3 +241,116 @@
   font-size: 12px;
   font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================= */
+/* Mobile Responsive Styles */
+/* ========================= */
+
+@media screen and (max-width: 768px) {
+
+  /* Top Bar */
+
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .top-bar-content {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .top-bar-content .top-link {
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  /* Logo */
+
+  .logo-img {
+    height: 100px;
+    margin: 0;
+  }
+
+  /* Navigation */
+
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Dropdown */
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: 1px solid #eee;
+  }
+
+  /* Emergency Section */
+
+  .emergency-section {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .emergency-red,
+  .emergency-grey {
+    width: 90%;
+    text-align: center;
+  }
+
+  .search-circle {
+    margin-bottom: 8px;
+  }
+
+  /* Language Dropdown */
+
+  .language-select {
+    width: 150px;
+  }
+}

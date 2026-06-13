@@ -158,6 +158,7 @@ function AppWrapper() {
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/appointments" element={<AppointmentsPage />} />
         <Route path="/" element={<Register />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/registered-users" element={<RegisteredUsers />} />
         <Route path="/login" element={<Login />} />
         <Route path="/careers" element={<Careers />} />

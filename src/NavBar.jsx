@@ -91,7 +91,7 @@ const NavBar = ({ refs, onScroll }) => {
       {/* LEFT — Logo */}
       <div className="logo">
 
-        <Link to="/">
+        <Link to="/home">
           <img
             src="/images/logo.png"
             alt="HealthCare Logo"
